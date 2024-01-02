@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{[your-url-to-the-solution](https://devchallenges-404-page-a5kpftgvg-donjorgeestoicos-projects.vercel.app/)}">
+    <a href="https://{https://devchallenges-404-page-a5kpftgvg-donjorgeestoicos-projects.vercel.app/}">
       Demo
     </a>
     <span> | </span>
