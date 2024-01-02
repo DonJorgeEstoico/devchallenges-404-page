@@ -2,94 +2,167 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
-
-    <link rel="icon" href="devchallenges.png" />
-
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Devchallenges</title>
 
     <style>
+      /*--------------HTML-AND-BODY--------------*/
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
       body {
-        font-family: "Poppins", sans-serif;
+        min-height: 100vh;
+        min-width: 100vh;
       }
 
-      ul {
-        padding-left: 24px;
+      /*--------------HEADER--------------*/
+      @font-face {
+        font-family: inconsolata;
+        src: url(assets/fonts/inconsolata.ttf);
       }
 
-      li {
-        margin-bottom: 8px;
+      header {
+        font-family: "inconsolata", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        padding: 2%;
+        padding-left: 3%;
       }
 
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
+      /*--------------GRIDS-BLOCKS--------------*/
+
+      .one-block-message {
+        display: grid;
+        padding-inline: 50px;
+        padding-block: 50px;
       }
 
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
+      @media (width >= 1100px) {
+        .all-block-message {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
       }
 
-      .welcome-text p {
-        font-size: 1rem;
+      /*--------------IMG-TEXTS-AND-BUTTON--------------*/
+      .img-message {
+        height: 66vh;
+        justify-self: center;
+      }
+
+      @media only screen and (max-width: 1100px) {
+        header {
+          font-size: 44px;
+        }
+
+        .img-message {
+          margin-top: 5rem;
+          height: 56vh;
+        }
+
+        .title-message {
+          margin-bottom: 3rem;
+          font-size: 104px !important;
+          inline-size: 106% !important;
+        }
+
+        .middle-message {
+          margin-bottom: 6rem;
+          font-size: 34px !important;
+          inline-size: 76% !important;
+        }
+
+        .btn-message {
+          width: 432px !important;
+          height: 136px !important;
+        }
+
+        .btn-text-message {
+          font-size: 24px !important;
+        }
+
+        footer {
+          font-size: 24px !important;
+        }
+      }
+
+      @font-face {
+        font-family: spacemono;
+        src: url(assets/fonts/spacemono.ttf);
+      }
+
+      .title-message {
+        color: var(--Gray-1, #333);
+        font-family: spacemono;
+        font-size: 64px;
+        font-weight: 1000;
+        inline-size: 70%;
+      }
+
+      .middle-message {
+        color: var(--Gray-2, #4f4f4f);
+        font-family: spacemono;
+        font-size: 24px;
         font-weight: 400;
+        inline-size: 46%;
       }
 
-      .welcome-text h1 {
-        font-size: 1.5rem;
+      .btn-message {
+        background: var(--Gray-1, #333);
+        width: 216px;
+        height: 68px;
+        flex-shrink: 0;
       }
 
-      .welcome-text a {
-        color: #f7542e;
+      .btn-text-message {
+        color: #fff;
+        font-family: spacemono;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      /*--------------FOOTER--------------*/
+      footer {
+        color: #bdbdbd;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 2%;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        box-sizing: border-box;
       }
     </style>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
+    <header>404 NOT FOUND</header>
 
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+    <div class="all-block-message">
+      <div class="one-block-message">
+        <img src="assets/images/Scarecrow.png" class="img-message" />
       </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+      <div class="one-block-message">
+        <span class="title-message">I have bad news for you</span>
+        <span class="middle-message"
+          >The page you are looking for might be removed or is temporarily
+          unavailable</span
+        >
+        <button class="btn-message">
+          <span class="btn-text-message">Back to homepage</span>
+        </button>
+      </div>
     </div>
+
+    <footer>
+      created by <span style="text-decoration-line: underline">DonJorgeEstoico</span> -
+      devChallenges.io
+    </footer>
   </body>
 </html>
