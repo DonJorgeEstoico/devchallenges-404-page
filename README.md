@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="(https://devchallenges-404-page-a5kpftgvg-donjorgeestoicos-projects.vercel.app/)">
+    <a href="[(https://devchallenges-404-page-a5kpftgvg-donjorgeestoicos-projects.vercel.app/)](https://devchallenges-404-page-a5kpftgvg-donjorgeestoicos-projects.vercel.app/)">
       Demo
     </a>
     <span> | </span>
@@ -16,7 +16,7 @@
       Solution
     </a>
     <span> | </span>
-    <a href="(https://legacy.devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY)">
+    <a href="[(https://legacy.devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY)](https://legacy.devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY)">
       Challenge
     </a>
   </h3>
